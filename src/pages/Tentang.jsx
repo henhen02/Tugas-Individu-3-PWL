@@ -1,6 +1,4 @@
-import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import React, { useEffect, useState } from "react";
 import {
   AssetsCode,
   FooterCode,
@@ -8,14 +6,33 @@ import {
   NavBarCode,
 } from "../components/CodeRenderer";
 import { BerandaCapt, TentangCapt } from "../components/Assets";
+import { ScrollTop } from "../components/Button";
 
 const Tentang = () => {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 300
+        ? setShowScrollButton(true)
+        : setShowScrollButton(false);
+    });
+  }, []);
   return (
     <>
       <main>
+        {showScrollButton && (
+          <ScrollTop
+            actions={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          />
+        )}
         <h1>Tentang Spesifikasi Tugas Individu 3</h1>
         <div className="content">
-          <div className="content">
+          <div className="content" id="komponen">
             <h2>Komponen Aplikasi</h2>
             <p>
               Terdapat beberapa komponen yang dibuat dalam tugas kali ini,
@@ -65,17 +82,17 @@ const Tentang = () => {
               </div>
             </div>
           </div>
-          <div className="content">
+          <div className="content" id="halaman">
             <h2>Halaman</h2>
             <p>
               Selain komponen, juga terdapat beberapa halaman yang dibangun
-              dalam aplikasi ini.
+              dalam aplikasi ini
             </p>
             <div className="content about">
               <h3>Beranda</h3>
               <p>
                 Halaman Beranda adalah halaman yang akan pertama kali
-                ditampilkan ketika pengguna menjalankan aplikasi ini.
+                ditampilkan ketika pengguna menjalankan aplikasi ini
               </p>
               <div className="highlighter">
                 <BerandaCapt />
@@ -91,6 +108,11 @@ const Tentang = () => {
                 <TentangCapt />
               </div>
             </div>
+          </div>
+          <div className="content" id="librarydanasset">
+            <h2>Library & Asset</h2>
+            <p>Beberapa libary dan asset yang digunakan dalam tugas ini</p>
+            <div className="content about"></div>
           </div>
         </div>
       </main>

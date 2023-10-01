@@ -1,8 +1,11 @@
 import { Curious } from "../components/Assets";
+import { AddButton, MinButton, ResetButton } from "../components/Button";
 import Header from "../components/Header";
 import { NavigateButton } from "../components/NavigateButton";
+import React, { useState } from "react";
 
 const Beranda = () => {
+  const [number, setNumber] = useState(0);
   return (
     <>
       <Header />
@@ -11,7 +14,7 @@ const Beranda = () => {
           <div className="childern">
             <Curious width={250} />
             <div className="content">
-              <h2>Tugas Individu 3?</h2>
+              <h2>Tugas Individu Minggu 3?</h2>
               <p>
                 Ditugas individu ke-3 ini, kita diajak untuk membuat aplikasi
                 web kita sendiri menggunakan{" "}
@@ -30,6 +33,41 @@ const Beranda = () => {
               <NavigateButton text={"Tentang Tugas 3"} target={"about"} />
             </div>
           </div>
+        </div>
+        <div
+          className="content"
+          style={{
+            textAlign: "center",
+          }}
+        >
+          <h2>Coba Statefull Component Dibawah!</h2>
+          <div
+            className="container"
+            style={{
+              justifySelf: "center",
+              alignSelf: "center",
+            }}
+          >
+            <AddButton actions={() => setNumber(number + 1)} />
+            <div
+              style={{
+                minWidth: "150px",
+                textAlign: "center",
+              }}
+            >
+              <h1>{number}</h1>
+            </div>
+            <MinButton
+              actions={() =>
+                number === 0 ? alert("Number already 0") : setNumber(number - 1)
+              }
+            />
+          </div>
+          <ResetButton
+            actions={() =>
+              number === 0 ? alert("Number already 0") : setNumber(0)
+            }
+          />
         </div>
       </main>
     </>
