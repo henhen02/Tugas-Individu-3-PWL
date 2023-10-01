@@ -1,13 +1,13 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const SyntaxLang = "javascript";
 
 export const AssetsCode = () => {
   return (
     <>
-      <SyntaxHighlighter language={SyntaxLang} style={vs2015} showLineNumbers>
+      <SyntaxHighlighter language={SyntaxLang} style={a11yDark} showLineNumbers>
         {`import React from "react";
 
 export const Assets = ({ props }) => {
@@ -31,7 +31,7 @@ export const Assets = ({ props }) => {
 
 export const NavBarCode = () => {
   return (
-    <SyntaxHighlighter language="javascript" style={vs2015} showLineNumbers>
+    <SyntaxHighlighter language="javascript" style={a11yDark} showLineNumbers>
       {`import React from "react";
 
 import { NavLink } from "react-router-dom";
@@ -64,7 +64,7 @@ export default NavBar;`}
 
 export const HeaderCode = () => {
   return (
-    <SyntaxHighlighter language="javascript" style={vs2015} showLineNumbers>
+    <SyntaxHighlighter language="javascript" style={a11yDark} showLineNumbers>
       {`import React from "react";
 
 const Header = () => {
@@ -83,7 +83,7 @@ export default Header;`}
 
 export const FooterCode = () => {
   return (
-    <SyntaxHighlighter language="javascript" style={vs2015} showLineNumbers>
+    <SyntaxHighlighter language="javascript" style={a11yDark} showLineNumbers>
       {`import React from "react";
 
 const Footer = () => {
