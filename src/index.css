@@ -5,8 +5,6 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 #root {
   display: flex;
@@ -34,11 +32,8 @@ nav ul li a {
   text-decoration: none;
   color: #EEE2DE;
 }
-.active {
-  color: #00ADB5;
-}
 header {
-  padding: 60px;
+  padding: 60px 0;
   display: flex;
   color: #00ADB5;
   align-items: center;
@@ -50,10 +45,16 @@ main {
   flex: 1;
   gap: 10px;
   padding: 10px;
-  color: #222831;
   display: inherit;
   flex-direction: column;
+}
+.light {
+  color: #222831;
   background-color: #EEE2DE;
+}
+.dark {
+  color: #EEE2DE;
+  background-color: #222831;
 }
 footer {
   padding: 20px;
@@ -62,11 +63,6 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #393E46;
-}
-p > a {
-  text-decoration: underline;
-  font-weight: bold;
-  color: #00ADB5;
 }
 button {
   gap: 10px;
@@ -80,6 +76,9 @@ button {
   justify-self: center;
   justify-content: center;
   border: 2px solid rgb(210, 210, 210);
+}
+.active {
+  color: #00ADB5;
 }
 .add {
   background-color: #00ADB5;
@@ -104,43 +103,31 @@ button {
   box-shadow: 0px 10px 25px -5px rgba(0,0,0,.8)
 }
 .container {
-  gap: 10px;
-  padding: 10px;
   display: flex;
+}
+.center {
+  align-self: center;
+}
+.item-center {
+  align-items: center;
+  justify-content: center;
+}
+.row {
   flex-direction: row;
 }
-.childern {
-  display: inherit;
-  align-items: center;
-  flex-direction: inherit;
-}
-.content {
-  flex: 1;
-  gap: 10px;
-  display: flex;
+.column {
   flex-direction: column;
 }
-.button-no-fill {
-  margin-top: 10px;
+.half-width {
+  width: 50%;
 }
-.button-no-fill a {
-  padding: 10px;
-  cursor: pointer;
-  color: #00ADB5;
-  font-weight: 600;
-  width: fit-content;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 2px solid #00ADB5;
+.half-height {
+  height: 50%;
 }
-.about {
-  width: 60%;
-  margin: 10px 0 0 10px;
+.full-height {
+  flex: 1;
 }
-.highlighter {
-  width: 100%;
-  max-height: 400px;
-  overflow: auto;
-  align-self: center;
-  justify-self: center;
+.item-auto-space {
+  justify-content: space-between;
+  align-items: center;
 }

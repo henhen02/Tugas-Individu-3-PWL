@@ -12,8 +12,8 @@ export const Curious = ({ width }) => {
         rel="noreferrer"
       >
         <img
-          width={width}
-          height={width}
+          width={width == null ? 300 : width}
+          height={width == null ? 300 : width}
           src={RafikiCurious}
           alt="curiosity search-rafiki.png"
         />
