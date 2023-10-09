@@ -47,6 +47,8 @@ main {
   padding: 10px;
   display: inherit;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .light {
   color: #222831;
@@ -77,6 +79,9 @@ button {
   justify-content: center;
   border: 2px solid rgb(210, 210, 210);
 }
+th, td{
+  padding: 5px;
+}
 .active {
   color: #00ADB5;
 }
@@ -105,8 +110,20 @@ button {
 .container {
   display: flex;
 }
+.left {
+  align-self: flex-start;
+}
 .center {
   align-self: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
 }
 .item-center {
   align-items: center;
@@ -124,10 +141,31 @@ button {
 .half-height {
   height: 50%;
 }
-.full-height {
+.flex-full {
   flex: 1;
+}
+.full-width {
+  width: 100%;
 }
 .item-auto-space {
   justify-content: space-between;
   align-items: center;
+}
+.table-auto {
+  table-layout: auto;
+}
+.minimal-gap {
+  gap: 10px;
+}
+.syntax-container {
+  max-height: 300px;
+  overflow: auto;
+}
+.direct {
+  color: #00ADB5;
+  margin-top: 10px;
+  padding: 10px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 2px solid #00ADB5;
 }

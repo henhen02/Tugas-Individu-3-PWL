@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import * as AiIcon from "react-icons/ai";
 
 export const AddButton = ({ actions }) => {
@@ -41,6 +40,22 @@ export const ScrollTop = ({ actions }) => {
       <button className="back-to-top" onClick={actions}>
         <AiIcon.AiOutlineArrowUp size={32} color="#EEE2DE" />
       </button>
+    </>
+  );
+};
+
+export const DirectButton = ({ to_page, text }) => {
+  return (
+    <>
+      <a
+        href={to_page}
+        target="_blank"
+        rel="noreferrer"
+        className="direct container row minimal-gap item-center"
+      >
+        {text}
+        <AiIcon.AiOutlineRight size={24} color="#00ADB5" />
+      </a>
     </>
   );
 };

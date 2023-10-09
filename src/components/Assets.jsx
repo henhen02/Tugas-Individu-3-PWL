@@ -1,7 +1,7 @@
 import React from "react";
 import RafikiCurious from "../assets/curiosity search-rafiki.png";
-import SSBeranda from "../assets/beranda.png";
-import SSTentang from "../assets/tentang.png";
+import layoutofberanda from "../assets/Layout of beranda.png";
+import layoutoftentangandkontak from "../assets/Layout of tentang and kontak.png";
 
 export const Curious = ({ width }) => {
   return (
@@ -21,29 +21,38 @@ export const Curious = ({ width }) => {
     </>
   );
 };
-
-export const BerandaCapt = () => {
+export const LayoutOFBeranda = () => {
   return (
     <>
       <img
-        src={SSBeranda}
-        alt="beranda.png"
-        style={{
-          width: "100%",
-        }}
+        className="full-width"
+        src={layoutofberanda}
+        alt="Layout of beranda.png"
+      />
+    </>
+  );
+};
+export const LayoutOFTK = () => {
+  return (
+    <>
+      <img
+        className="full-width"
+        src={layoutoftentangandkontak}
+        alt="Layout of tentang and kontak.png"
       />
     </>
   );
 };
 
-export const TentangCapt = () => {
+export const PPGithubHendri = () => {
   return (
     <>
       <img
-        src={SSTentang}
-        alt="tentang.png"
+        src="https://avatars.githubusercontent.com/u/97578440?v=4"
+        alt="henhen02.png"
         style={{
-          width: "100%",
+          width: "200px",
+          borderRadius: "100%",
         }}
       />
     </>
