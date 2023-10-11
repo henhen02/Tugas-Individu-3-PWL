@@ -1,18 +1,18 @@
 import React from "react";
 import * as AiIcon from "react-icons/ai";
 
-export const InputWithIcon = ({ name }) => {
+export const InputUserWithIcon = ({ name, placeholder }) => {
   return (
     <>
       <div className="input-field with-icons">
         <AiIcon.AiOutlineUser size={16} />
-        <input type="text" name={name} id={name} />
+        <input type="text" name={name} id={name} placeholder={placeholder} />
       </div>
     </>
   );
 };
 
-export const InputNoIcon = () => {
+export const InputUserNoIcon = () => {
   return (
     <>
       <div className="input-field">
@@ -20,4 +20,8 @@ export const InputNoIcon = () => {
       </div>
     </>
   );
+};
+
+export const TextArea = () => {
+  return <textarea></textarea>;
 };

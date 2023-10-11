@@ -59,3 +59,11 @@ export const DirectButton = ({ to_page, text }) => {
     </>
   );
 };
+
+export const SendButton = ({ actions }) => {
+  return (
+    <button className="send" onClick={actions}>
+      Kirim
+    </button>
+  );
+};

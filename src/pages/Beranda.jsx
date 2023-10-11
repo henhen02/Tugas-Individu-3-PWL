@@ -6,9 +6,11 @@ import { AddButton, MinButton, ResetButton } from "../components/Button";
 
 // library
 import React, { useContext, useState } from "react";
+import { ScreenContext } from "../context/screenContenxt";
 
 const Beranda = () => {
   const { theme } = useContext(ThemeContext);
+  const { screenSize } = useContext(ScreenContext);
   const [number, setNumber] = useState(0);
 
   const increment = () => {
@@ -27,7 +29,15 @@ const Beranda = () => {
     <>
       <Header />
       <main className={theme}>
-        <div className="container row center">
+        <div
+          className={`container center ${
+            screenSize > 1000
+              ? "row"
+              : screenSize > 600 && screenSize <= 1000
+              ? "column"
+              : "column full-width item-center"
+          }`}
+        >
           <div className="container row item-center">
             <Curious />
             <div className="container column">
@@ -42,7 +52,11 @@ const Beranda = () => {
           <div className="container column full-width item-center item-auto-space">
             <h1>Coba komponen full state dibawah</h1>
             <div className="container column full-width item-auto-space">
-              <div className="container row half-width item-auto-space">
+              <div
+                className={`container row item-auto-space ${
+                  screenSize > 600 ? "half-width" : "full-width"
+                }`}
+              >
                 <AddButton actions={increment} />
                 <MinButton actions={decrement} />
               </div>
