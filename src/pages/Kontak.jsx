@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/themeContext";
-import { InputUserWithIcon, TextArea } from "../components/Input";
 import { SendButton } from "../components/Button";
+import InputComponent from "../components/Input";
 
 const Kontak = () => {
   const { theme } = useContext(ThemeContext);
@@ -16,9 +16,9 @@ const Kontak = () => {
         >
           <h1>Kirim pertanyaan kamu dibawah</h1>
           <div className="container column half-width minimal-gap">
-            <InputUserWithIcon name={"nama"} placeholder={"Nama Lengkap"} />
-            <InputUserWithIcon name={"nama"} placeholder={"Nama Lengkap"} />
-            <TextArea />
+            <InputComponent type={"name"} placeholder={"Nama Lengkap"} />
+            <InputComponent type={"email"} placeholder={"Email"} />
+            <InputComponent type={"message"} />
           </div>
           <div className="container half-width">
             <SendButton />
