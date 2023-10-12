@@ -7,55 +7,32 @@ const NavBar = () => {
   const { theme, themeHandle } = useContext(ThemeContext);
   return (
     <>
-      {theme === "light" ? (
-        <nav>
-          <div className="icon-container">
-            <h1>PWL TIM 3</h1>
-          </div>
-          <ul>
-            <li onClick={themeHandle}>
-              {theme === "light" ? (
-                <FiIcon.FiSun color="yellow" />
-              ) : (
-                <FiIcon.FiMoon />
-              )}
-            </li>
-            <li>
-              <NavLink to={"/"}>Beranda</NavLink>
-            </li>
-            <li>
-              <NavLink to={"about"}>Tentang</NavLink>
-            </li>
-            <li>
-              <NavLink to={"contact"}>Kontak</NavLink>
-            </li>
-          </ul>
-        </nav>
-      ) : (
-        <nav>
-          <div className="icon-container">
-            <h1>PWL TIM 3</h1>
-          </div>
-          <ul>
-            <li onClick={themeHandle}>
-              {theme === "light" ? (
-                <FiIcon.FiSun color="yellow" />
-              ) : (
-                <FiIcon.FiMoon />
-              )}
-            </li>
-            <li>
-              <NavLink to={"/"}>Beranda</NavLink>
-            </li>
-            <li>
-              <NavLink to={"about"}>Tentang</NavLink>
-            </li>
-            <li>
-              <NavLink to={"contact"}>Kontak</NavLink>
-            </li>
-          </ul>
-        </nav>
-      )}
+      <nav>
+        <div className="icon-container">
+          <h1>PWL TIM 3</h1>
+        </div>
+        <ul>
+          <li onClick={themeHandle}>
+            {theme === "light" ? (
+              <FiIcon.FiSun color="yellow" />
+            ) : (
+              <FiIcon.FiMoon />
+            )}
+          </li>
+          <li>
+            <NavLink to={"/"}>Beranda</NavLink>
+          </li>
+          <li>
+            <NavLink to={"about"}>Tentang</NavLink>
+          </li>
+          <li>
+            <NavLink to={"contact"}>Kontak</NavLink>
+          </li>
+          <li>
+            <NavLink to={"result"}>Pesan</NavLink>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 };

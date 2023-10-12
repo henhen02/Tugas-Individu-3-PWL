@@ -67,8 +67,6 @@ main {
   padding: 10px;
   display: inherit;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .light {
   color: #222831;
@@ -161,11 +159,19 @@ th, td{
 .half-height {
   height: 50%;
 }
+.full-height {
+  height: 100%;
+}
 .flex-full {
   flex: 1;
 }
 .full-width {
   width: 100%;
+}
+.messages-container {
+  padding: 5px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
 }
 .item-auto-space {
   justify-content: space-between;

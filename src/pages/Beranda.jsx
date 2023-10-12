@@ -30,9 +30,9 @@ const Beranda = () => {
       <Header />
       <main className={theme}>
         <div
-          className={`container center ${
+          className={`container ${
             screenSize > 1000
-              ? "row"
+              ? "row flex-full"
               : screenSize > 600 && screenSize <= 1000
               ? "column"
               : "column full-width item-center"
@@ -49,7 +49,7 @@ const Beranda = () => {
               </p>
             </div>
           </div>
-          <div className="container column full-width item-center item-auto-space">
+          <div className="container column full-width item-center minimal-gap">
             <h1>Coba komponen full state dibawah</h1>
             <div className="container column full-width item-auto-space">
               <div

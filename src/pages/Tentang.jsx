@@ -36,9 +36,8 @@ const Tentang = () => {
             }}
           />
         )}
-
+        <h1>Spesifikasi Tugas Individu Minggu 3</h1>
         <div className="container column minimal-gap">
-          <h1>Spesifikasi Tugas Individu Minggu 3</h1>
           <div className="container column half-width minimal-gap">
             <h3 id="komponenhalaman">Komponen Halaman</h3>
             <p>

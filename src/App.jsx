@@ -9,6 +9,7 @@ import RootElement from "./pages/RootElement";
 import Beranda from "./pages/Beranda";
 import Tentang from "./pages/Tentang";
 import Kontak from "./pages/Kontak";
+import Result from "./pages/Result";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const route = createBrowserRouter(
         <Route index element={<Beranda />} />
         <Route path="about" element={<Tentang />} />
         <Route path="contact" element={<Kontak />} />
+        <Route path="result" element={<Result />} />
       </Route>
     </>
   )
