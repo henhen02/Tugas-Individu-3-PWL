@@ -55,7 +55,8 @@ npm test
 ##### Test Result
 
 Previously, testing was also done on some application components such as buttons, assets, header, and footer. You can see the test results in the picture below:
-<img src="./src/assets/testresult.PNG" width="50%" height="50%" alt="testresult.png"/>
+
+![test result](./src/assets/testresult.PNG)
 
 ## Author
 
