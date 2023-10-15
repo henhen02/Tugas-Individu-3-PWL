@@ -56,6 +56,10 @@ npm test
 
 Previously, testing was also done on some application components such as buttons, assets, header, and footer. You can see the test results in the picture below:
 
+```
+
+```
+
 ![test result](./src/assets/testresult.PNG)
 
 ## Author
