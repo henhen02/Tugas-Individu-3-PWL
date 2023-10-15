@@ -121,7 +121,7 @@ const Tentang = () => {
               <p>
                 Beberapa komponen diatas hanya sebagian dari komponen yang
                 dijelaskan dalam halaman ini. Untuk lebih lengkapnya, kamu dapat
-                mengunjungi repositori berikut<sup>{`[2]`}</sup>.
+                mengunjungi repositori berikut.
               </p>
               <div
                 className="container row minimal-gap item-center"

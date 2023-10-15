@@ -44,6 +44,19 @@ npm start
 
 Wait until your computer has finished the compilation process and opens a tab in your default browser.
 
+### Try To Test Some Components
+
+To perform testing, you can run the following command:
+
+```
+npm test
+```
+
+##### Test Result
+
+Previously, testing was also done on some application components such as buttons, assets, header, and footer. You can see the test results in the picture below:
+<img src="./src/assets/testresult.PNG" width="50%" height="50%" alt="testresult.png"/>
+
 ## Author
 
 Hendri Aldi Zulfan [henhen02](https://github.com/henhen02/)
