@@ -3,7 +3,7 @@ import dataDump from "../dump/data.dump";
 import { ThemeContext } from "../context/themeContext";
 
 const Result = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme, themeHandle } = useContext(ThemeContext);
   return (
     <>
       <main className={theme}>

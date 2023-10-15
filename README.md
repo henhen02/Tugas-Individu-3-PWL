@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Tugas Individu 3 PWL (Pemrograman Web Lanjut)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the 'Tugas Individu 3 Pemrograman Web Lanjut' repository which contains program code for a web app. This app was create using [Javascript](https://www.javascript.com/) with [Node.js](https://nodejs.org/en/docs) & [React.js](https://react.dev/).
 
-## Available Scripts
+## How To Run?
 
-In the project directory, you can run:
+Before you can run this app, make sure that you have installed `Node.js` and `Git` on your computer (Please note, Git and Github are not same!)
 
-### `npm start`
+### Clone This Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone this repository on your computer through your computer's terminal by running the following command:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+git clone https://github.com/henhen02/Tugas-Individu-3-PWL.git
+```
 
-### `npm test`
+Wait until the clone process is complete to proceed with the directory change step through your computer’s terminal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Change To App Directory
 
-### `npm run build`
+The next step is to change directories. If you are using Windows, you can use the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd Tugas-Individu-3-PWL
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Depedencies Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before you can run this app, you are required to install the necessary dependencies. Use the following command:
 
-### `npm run eject`
+```
+npm i
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The dependency installation process will take about 5-10 minutes (depending on your internet speed). If the dependency installation fails and an error message appears, try to make sure that you have installed [Node.js](https://nodejs.org/en).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Start For Run The App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This app runs in development mode, you can run this app using the following command:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+Wait until your computer has finished the compilation process and opens a tab in your default browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hendri Aldi Zulfan [henhen02](https://github.com/henhen02/)
+hendri.120140186@student.itera.ac.id (student) | hendri21072002@gmail.com (personal)
